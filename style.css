@@ -70,7 +70,41 @@ header nav {
 header nav i {
   color: #fff;
   font-size: larger;
-  margin: px;
+
+  /* margin: px; */
+}
+
+.navvme {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background: #3c3a39;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -100%;
+}
+
+.navvme.active {
+  left: 0;
+}
+
+.cloze {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.navlinks {
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
 }
 
 .headline {
@@ -131,12 +165,14 @@ header nav i {
   padding-right: 3px;
 }
 
-.menb{
-  background: #3C3A39;
+/* .menb{
+  background: black;
   width: 100%;
   display: flex;
   position: absolute;
-}
+  z-index: 1;
+  height: 100%;
+} */
 
 .mmed {
   display: flex;
@@ -180,14 +216,14 @@ header nav i {
 
 .work-section {
   display: grid;
-  grid: template rows 1fr;
+  grid-template-rows: 1fr;
   justify-items: center;
   align-items: stretch;
   height: 3455px;
   width: 375px;
   left: 0;
   border-radius: 0;
-  padding: 120px, 0, 120px, 0;
+  padding: 120px 0;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -329,7 +365,7 @@ header nav i {
 .p-tech {
   top: 0;
   border-radius: 0;
-  padding: 10px, 12px;
+  padding: 10px 12px;
   color: #091e42;
   border: 1px solid #8993a4;
   font-family: 'Inter', sans-serif;
@@ -542,7 +578,7 @@ header nav i {
   background-image: url('assets/image/about.png');
   background-repeat: no-repeat;
   background-position: bottom 80% right 0;
-  grid: template rows 1fr;
+  grid-template-rows: 1fr;
   justify-items: center;
   align-items: stretch;
 }
@@ -1138,7 +1174,7 @@ textarea {
   .p-tech {
     top: 0;
     border-radius: 0;
-    padding: 10px, 12px;
+    padding: 10px 12px;
     color: #091e42;
     border: 1px solid #8993a4;
     font-family: 'Inter', sans-serif;
@@ -1367,7 +1403,7 @@ textarea {
     background-image: url('assets/image/grabt.png');
     background-repeat: no-repeat;
     background-position: top 10% right 0;
-    grid: template column 1fr;
+    grid-template-columns: 1fr;
     justify-items: center;
     align-items: stretch;
     padding: 130px 142px 0 142px;
