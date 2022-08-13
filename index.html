@@ -28,7 +28,7 @@
     <section class="wrapper">
         <header>
             <div class="menb"></div>
-            <nav>
+            <nav class="navbaz">
                  <a href="#" class="my-logo">Aneal Laryea</a>
                 <ul class="sects">
                     <li class="port"><a href="#">Portfolio</a></li>
@@ -102,12 +102,12 @@
                                <li class="p-tech bootzz"><a href="#">bootstrap</a></li>
                                <li class="p-tech rrby"><a href="#">Ruby</a></li>
                            </ul>
-                       <button class="madbtn" type="button">See Project</button>
+                       <button class="madbtn" onclick="appearModal(0)" type="button">See Project</button>
                    </div>
                </div>
     
                <!--frame 43-->
-               <div class="second-frame">
+               <!-- <div class="second-frame">
                    <div class="card-works firstcard">
                            <div class="place-hold">
                                <div class="r-b dp">
@@ -223,8 +223,11 @@
            
        </div>
     </div>
-         </div>
-    </div>   
+         </div> -->
+         <section class="cardSec" id="cardSecs">
+       
+        </section>
+        </div>   
     
     
        </section>
@@ -282,7 +285,7 @@
                      <h5 class="fotext">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h5>
                  </div>
                  <div class="form-card">
-                     <form action="https://formspree.io/f/xjvllnnl" method="post">
+                     <form action="https://formspree.io/f/xjvllnnl" method="post" id="form">
                          <ul class="fmlist">
                             <li >
                                 <label>
@@ -290,19 +293,19 @@
                                </label>
                             </li>
                             <li>
-                                <label>
-                                <input type="email" id="mail" name="user_email" placeholder="Email address" required>
-                               </label>
+                                <input type="email" id="mail" name="user_email" placeholder="Email address">
                             </li>
                             <li>
                                 <label>
                                 <textarea id="msg" name="user_message"  maxlength="500" placeholder="Enter text here" required></textarea>
                                 </label>
                             </li>
-                            <li class="fbutton">
+                            <li class="fbutton controlz">
                                 <button type="submit" class="fbtnn">Get in touch</button>
+                                <span class="error"></span>
                             </li>
                          </ul>
+                         
                      </form>
                  </div>
              </div>
@@ -319,10 +322,10 @@
         </div>
 
     </section>
-
     
-   
+    >
 
-  <script src="script.js"></script>
+  
 </body>
+<script defer src="script.js"></script>
 </html>
